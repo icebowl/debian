@@ -6,7 +6,6 @@ apt-get install curl;
 apt-get install git;
 apt-get install net-tools;
 apt-get install geany geany-plugins sudo chromium -y;
-systemctl set-default multi-user.target;
 apt  install build-essential gcc g++ make perl dkms;
 update gcc;
 update g++;
