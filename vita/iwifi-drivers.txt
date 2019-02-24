@@ -1,0 +1,7 @@
+Intel Corporation Wireless 3165 (rev 79)
+https://wiki.debian.org/iwlwifi
+
+# Debian 9 "Stretch"
+deb http://httpredir.debian.org/debian/ stretch main contrib non-free
+
+apt-get update && apt-get install firmware-iwlwifi
