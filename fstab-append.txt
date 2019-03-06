@@ -1,0 +1,4 @@
+/dev/sdb /x ext4 defaults 0 0
+/dev/sdc /y ext4 defaults 0 0
+/dev/sdd /z ext4 defaults 0 0
+
