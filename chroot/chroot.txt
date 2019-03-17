@@ -1,0 +1,7 @@
+https://www.debian.org/doc/manuals/securing-debian-howto/ap-chroot-ssh-env.en.html
+
+https://www.debian.org/doc/manuals/debian-reference/ch09#_chroot_system
+
+https://www.debian.org/doc/manuals/debian-reference/ch09#_chroot_system
+
+https://linuxconfig.org/install-debian-server-in-a-linux-chroot-environment
