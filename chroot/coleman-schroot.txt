@@ -1,0 +1,62 @@
+coleman debian schoot
+https://wiki.debian.org/Schroot
+
+Setup  Configuration file: /etc/schroot/schroot.conf
+    If you prefer separate configuration files, place them in /etc/schroot/chroot.d/. 
+Example
+A simple example that creates a chroot and installs <some-package> for an X windows environment. This is not the safest nor a standard way of setup.
+
+Create root file system: 
+
+mkdir -p /srv/chroot/sid-blue
+debootstrap stretch /srv/chroot/sid-blue
+
+Make a file /etc/schroot/chroot.d/sid-blue-schroot:
+
+# schroot chroot definitions.
+# See schroot.conf(5) for complete documentation of the file format.
+#
+# Please take note that you should not add untrusted users to
+# root-groups, because they will essentially have full root access
+# to your system.  They will only have root access inside the chroot,
+# but that's enough to cause malicious damage.
+#
+# The following lines are examples only.  Uncomment and alter them to
+# customise schroot for your needs, or create a new entry from scratch.
+#
+[sid-blue-schroot]
+description=Contains the SPICE program
+aliases=test
+type=directory
+directory=/srv/chroot/sid-blue
+users=username (think about this)
+root-groups=root
+profile=desktop
+personality=linux
+preserve-environment=true
+
+
+
+Where jsmith is an underprivileged user.
+
+schroot -c test
+
+
+apt-get update && apt-get install <some-package>
+exit
+
+As the user jsmith execute:
+
+xhost +
+schroot -c sid-blue
+
+From this point the <some-package> could be used...
+
+Or,
+
+xhost +
+SESH=$(schroot -c test -b)
+schroot -r -c $SESH
+schroot -e -c $SESH
+
+Troubleshooting
