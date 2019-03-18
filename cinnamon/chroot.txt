@@ -2,8 +2,4 @@ https://www.debian.org/doc/manuals/securing-debian-howto/ap-chroot-ssh-env.en.ht
 
 https://www.debian.org/doc/manuals/debian-reference/ch09#_chroot_system
 
-https://www.debian.org/doc/manuals/debian-reference/ch09#_chroot_system
-
 https://linuxconfig.org/install-debian-server-in-a-linux-chroot-environment
-
-https://linuxconfig.org/how-to-automatically-chroot-jail-selected-ssh-user-logins
