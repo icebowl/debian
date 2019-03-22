@@ -18,7 +18,7 @@ Our chroot environment will consist of a bash shell.
 To do this, first, we need to create a chroot directory:
 
 # ! * * * * * * * * * * * * 
-# mkdir /SRV/chroot
+# mkdir /srv/chroot
 
 In the next step, we need to copy the bash binary and its all shared 
 library dependencies.
@@ -73,4 +73,7 @@ fi
 
 echo "Chroot jail is ready. To access it execute: chroot $CHROOT"
 
+
+useradd username
+usermod --shell /bin/bash username
 
