@@ -73,7 +73,18 @@ fi
 
 echo "Chroot jail is ready. To access it execute: chroot $CHROOT"
 
-
+add user:
 useradd username
 usermod --shell /bin/bash username
+
+addgroup chrootjail
+adduser username chrootjail
+or 
+usermod -a -G chrootjail username
+usermod -a -G dialout username (arduino example)
+
+add to /etc/sshd_config
+Match group chrootjail
+            ChrootDirectory /srv/chroot/
+
 
