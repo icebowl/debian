@@ -1,0 +1,2 @@
+https://linuxconfig.org/how-to-install-amdgpu-drivers-on-debian-9-stretch-linux
+
