@@ -1,0 +1,1 @@
+apt-get xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
