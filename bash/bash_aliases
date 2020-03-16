@@ -1,7 +1,7 @@
 # set python to python
 alias python='python3'
 #update
-alias update='sudo apt update && sudo apt upgrade && apt moo && cowsay updates are done && cat /etc/debian_version && uname -r'
+alias update='sudo apt update && sudo apt upgrade && cat /etc/debian_version && uname -r'
 
 #cwc
 # enable color support of ls and also add handy aliases
