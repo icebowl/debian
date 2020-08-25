@@ -1,0 +1,33 @@
+#localhost-ssl.conf
+<IfModule mod_ssl.c>
+	<VirtualHost _default_:443>
+		ServerAdmin webmaster@localhost
+		# Document /var/www/html
+		DocumentRoot /var/www/html
+		<Directory "/var/www/html">
+                     Options Indexes FollowSymLinks
+                     IndexOptions FancyIndexing VersionSort NameWidth=*
+                     AllowOverride All
+                     Require all granted
+                </Directory>
+		 ErrorLog /var/www/html/logs/error.log
+                 LogFormat "%h %l %u %t \"%r\" %>s %b" common
+                 CustomLog /var/www/html/logs/access_log common
+
+		SSLEngine on
+		#icebowl.cc
+		SSLCertificateFile  /etc/letsencrypt/live/icebowl.cc/fullchain.pem
+		SSLCertificateKeyFile /etc/letsencrypt/live/icebowl.cc/privkey.pem
+		# /etc/letsencrypt/live/icebowl.cc/fullchain.pem
+		#   /etc/letsencrypt/live/icebowl.cc/privkey.pem	
+		<FilesMatch "\.(cgi|shtml|phtml|php)$">
+				SSLOptions +StdEnvVars
+		</FilesMatch>
+		<Directory /usr/lib/cgi-bin>
+				SSLOptions +StdEnvVars
+		</Directory>
+
+
+	</VirtualHost>
+</IfModule>
+
