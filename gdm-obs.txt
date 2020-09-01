@@ -1,0 +1,7 @@
+cd /etc/gdm3/
+ls
+ll
+more daemon.conf
+nano  daemon.conf
+reboot
+
