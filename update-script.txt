@@ -1,0 +1,10 @@
+# 7 7 * * * /bin/bash -l /root/update/update.sh >/dev/null 2>&1
+# name of file update.sh
+#!/bin/bash
+NOW=$(date +"%Y-%m-%d-%T");
+LOGFILE="update-$NOW.txt";
+echo $LOGFILE;
+
+apt update;
+apt list --upgradable > /root/update/data/$LOGFILE;
+apt upgrade -y;
