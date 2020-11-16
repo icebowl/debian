@@ -12,4 +12,4 @@ update g++;
 apt install linux-headers-$(uname -r);
 apt install locate;
 updatedb;
-dpkg-reconfigure console-setup;
+#dpkg-reconfigure console-setup;
