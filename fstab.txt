@@ -1,0 +1,7 @@
+#/dev/sdb /home ext4 defaults,nodev,noexec 1 2  
+# removed nodev and noexec 190613
+/dev/sdb /home ext4 defaults 0 2
+/dev/sdc /x ext4 defaults  0 2
+/dev/sdd /y ext4 defaults  0 2
+/dev/sde /z ext4 defaults  0 2
+
