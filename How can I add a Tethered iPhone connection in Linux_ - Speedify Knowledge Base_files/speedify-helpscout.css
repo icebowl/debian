@@ -1,0 +1,163 @@
+/* Global */
+
+body {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* Navigation */
+
+.navbar .nav {
+	font-size: 14px !important;
+	bottom: 16px !important;
+	font-family: "Lato", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+}
+
+.navbar .nav li a {
+	transition: all 0.15s linear;
+}
+
+.navbar .nav li a:hover {
+	color: #5ea5e2;
+}
+
+.navbar .brand {
+	padding: 8px 0px;
+}
+
+.caret {
+	display: none !important;
+}
+
+
+/* Homepage */
+
+#docsSearch {
+	padding: 3em 0;
+}
+
+#searchBar button {
+	background: #d8318b;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #d8318b;
+}
+
+#searchBar button:hover {
+	background: #F24BA5;
+}
+
+#docsSearch h1 {
+	font-size: 28px;
+}
+
+.most-pop-articles h2 {
+	font-size: 24px;
+}
+
+
+/* Sidebar */
+
+#sidebar h3 {
+	font-size: 14px;
+}
+
+#sidebar .nav-list a {
+	font-size: 14px;
+}
+
+
+/* Article */
+
+.articleFoot .help {
+	font-size: 14px;
+	color: gray;
+}
+
+#sbContact {
+	color: #F24BA5;
+	border-bottom: 1px dotted #F24BA5;
+}
+
+#sbContact:hover {
+	color: #F24BA5;
+	border-bottom: 1px dotted #F24BA5;
+}
+
+
+/* Footer */
+
+.articleFoot p,
+.articleFoot time {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer span {
+	display: none;
+}
+
+
+/* CTA */
+
+.cta {
+	text-align: center;
+	background: #e8f4ff;
+	color: #333;
+	border-left: 1px solid #e9e5e5;
+	border-right: 1px solid #e9e5e5;
+	font-size: 14px;
+	padding: 16px 25px 32px 20px;
+}
+
+.cta h3 {
+	font-weight: bold;
+}
+
+.cta-button-row {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.cta-button-row a {
+	font-size:18px;
+	font-weight:bold;
+	color: white;
+	margin-top:10px;
+	padding: 1em 0;
+	border-radius: 5px;
+	text-decoration: none;
+	width: 46%;
+	transition: all .2s;
+}
+
+.cta-button-row a:hover {
+	cursor: pointer;
+}
+
+.cta-download {
+	background-color: #00ADEE;
+}
+
+.cta-download:hover {
+	background-color: #1AC1FF;
+}
+
+.cta-buy {
+	background-color: #60CE51;
+}
+
+.cta-buy:hover {
+	background-color: #71E261;
+}
