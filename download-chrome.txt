@@ -1,0 +1,4 @@
+https://www.google.com/chrome/
+download the *.deb
+sudo apt install ./google*.deb
+
