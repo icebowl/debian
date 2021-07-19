@@ -1,6 +1,5 @@
-auto ens18
-iface ens18 inet static
-  address 192.168.0.2
+auto enp0s3
+iface enp0s3 inet static
+  address 192.168.1.42
   netmask 255.255.255.0
-  gateway 192.168.0.1
-  dns-nameservers 89.207.128.252 89.207.130.252
+  gateway 192.168.1.1
